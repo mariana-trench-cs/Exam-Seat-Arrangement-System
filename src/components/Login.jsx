@@ -71,7 +71,7 @@ export default function Login() {
                 <h1>.</h1>
             </div>
             <div className="flex flex-col items-center justify-between h-screen w-[25rem] px-14 bg-[#2fb3b1]">
-            <h1 className="text-4 xl text-center text-green-medium tracking-wide font-medium mb-1000 font-Outfit-large">CHENDHURAN COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+            <h1 className="text-4 xl text-center text-green-medium tracking-wide font-medium mb-1000 font-Outfit-large top-1">CHENDHURAN COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
                 <div className="flex flex-col items-center justify-center h-screen w-full">
                     <h1 className="text-3 xl text-center text-green-medium tracking-wide font-normal mb-10 font-Outfit-Medium">LOG IN</h1>
                     <div className={errMsg ? "flex flex-rows items-center p-2 h-10 w-full border border-red-600 rounded-[10px] bg-red-200 text-red-600  mb-2" : "h-0 w-0 absolute left-[-9999px]"}>
