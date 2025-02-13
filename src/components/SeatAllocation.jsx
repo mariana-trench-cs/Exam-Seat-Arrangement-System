@@ -223,7 +223,7 @@ export default function SeatAllocation() {
         <h2 className="text-xl font-Outfit-Bold mb-4">SELECT EXAM HALLS</h2>
         <div className="flex flex-row hw:flex-col st:mb-3">
           <div className="flex-grow flex flex-col relative">
-            <div className="flex flex-row justify-between items-center bg-gray-100 px-4 py-3 rounded-t-2xl font-Outfit-Regular">
+            <div className="flex flex-row justify-between items-center bg-gray-300 px-4 py-3 rounded-t-2xl font-Outfit-Regular">
               {/* Search Bar */}
               <div className="mr-4 flex flex-row items-center w-full">
                 <span className="text-gray-500">
@@ -255,7 +255,7 @@ export default function SeatAllocation() {
                 </select>
               </div>
             </div>
-            <div className={`bg-gray-100 h-[21.5rem] overflow-y-auto rounded-b-2xl p-4 w-full ${studentsCount === 0 && "pointer-events-none"}`}>
+            <div className={`bg-gray-300 h-[21.5rem] overflow-y-auto rounded-b-2xl p-4 w-full ${studentsCount === 0 && "pointer-events-none"}`}>
               {loading ? (<ThreeCircles
                 height="65"
                 width="65"
@@ -290,8 +290,8 @@ export default function SeatAllocation() {
           <div>
           </div>
           <div className="flex flex-row gap-10">
-            <button className="bg-green-500 hover:bg-green-400 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" type="button" onClick={handleRooms}>ARRANGE</button>
-            <button className="bg-green-medium hover:bg-green-light text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" type="button" onClick={handleExcels}>RECEIVE MAIL</button>
+            <button className="bg-green-600 hover:bg-green-500 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" type="button" onClick={handleRooms}>ARRANGE</button>
+            <button className="bg-green-medium hover:bg-blue-medium text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" type="button" onClick={handleExcels}>RECEIVE MAIL</button>
           </div>
         </div>
       </div>

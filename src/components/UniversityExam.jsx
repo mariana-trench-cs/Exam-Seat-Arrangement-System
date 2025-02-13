@@ -239,7 +239,7 @@ export default function UniversityExam() {
                 <div className="flex flex-row justify-center items-center mt-6">
                     <h2 className="text-xl font-Outfit-Bold"><span className="whitespace-nowrap">EXAMINEE DETAILS</span></h2>
                     <input type="file" id="myFiles" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" multiple className="font-Outfit-Regular ml-5" />
-                    <button className="bg-green-500 hover:bg-green-400 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleFiles}>UPLOAD FILE</button>
+                    <button className="bg-green-600 hover:bg-green-500 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleFiles}>UPLOAD FILE</button>
                 </div>
             </div>
 
@@ -248,10 +248,10 @@ export default function UniversityExam() {
                 <form ref={formRef} className="flex flex-col st:flex-row justify-between" onSubmit={handleSchedule}>
                     <Input input_id="date" title="Date" inputRef={dateRef} type="date" placeholder="09-09-2020" />
                     <DropDownInput input_id="time" title="Time" inputRef={timeRef} options={['FN', 'AN']} />
-                    <DropDownInput input_id="branch" title="Branches" inputRef={branchRef} options={['CS', 'CC', 'CA', 'AD', 'CE', 'EC', 'EE', 'ME']} isTarget handleSlot={handleSlot} />
+                    <DropDownInput input_id="branch" title="Branches" inputRef={branchRef} options={['CSE','AI&DS','ECE','EEE', 'MECH','CEVIL']} isTarget handleSlot={handleSlot} />
                     <DropDownInput input_id="slot" title="Slot" inputRef={slotRef} options={['A', 'B', 'C', 'D', 'E', 'F']} isTarget handleSlot={handleSlot} />
-                    <DropDownInput input_id="subject" title="Subject" inputRef={subRef} options={subArray} />
-                    <button className="bg-blue-500 hover:bg-blue-400 text-white font-Outfit-Bold py-1 px-2 my-7 mx-2 h-10 w-[5rem] rounded-[20px]" type="submit">ADD</button>
+                    <DropDownInput input_id="subject" title="Subject" inputRef={subRef} options={['TOC','AI&ML','OS','EVS',]} />
+                    <button className="bg-blue-700 hover:bg-blue-500 text-white font-Outfit-Bold py-1 px-2 my-7 mx-2 h-10 w-[5rem] rounded-[20px]" type="submit">ADD</button>
                 </form>
             </div>
 
@@ -301,8 +301,8 @@ export default function UniversityExam() {
                         <p className="font-Outfit-Regular">No of Exams scheduled : {exams.length}</p>
                     </div>
                     <div className="flex flex-row gap-10">
-                        <button className="bg-gray-500 hover:bg-gray-400 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleClearall}>CLEAR ALL</button>
-                        <button className="bg-green-500 hover:bg-green-400 text-white font-bold h-10 w-[10rem] rounded-[20px] font-Outfit-Bold" onClick={handleNext}>NEXT</button>
+                        <button className="bg-gray-600 hover:bg-gray-500 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleClearall}>CLEAR ALL</button>
+                        <button className="bg-green-600 hover:bg-green-500 text-white font-bold h-10 w-[10rem] rounded-[20px] font-Outfit-Bold" onClick={handleNext}>NEXT</button>
                     </div>
                 </div>
             </div>

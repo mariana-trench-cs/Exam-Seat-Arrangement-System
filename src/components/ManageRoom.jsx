@@ -154,26 +154,28 @@ export default function ManageRoom() {
             <div className="px-8 pt-4 mt-6">
                 <h2 className="text-xl font-Outfit-Bold mb-3">ADD ROOM</h2>
                 <form ref={formRef} className="flex hw:flex-col flex-row justify-between" onSubmit={handleRoom}>
-                    <Input input_id="room-no" title="Room No" inputRef={roomNoRef} type="text" placeholder="M101" required />
-                    <DropDownInput id="branch" title="Floor No" inputRef={floorNoRef} options={['1', '2', '3', '4', '5']} required />
-                    <DropDownInput id="slot" title="Block" inputRef={blockRef} options={['M-George', 'Ramanujan']} required />
+                    <Input input_id="room-no" title="Room No" inputRef={roomNoRef} type="text" placeholder="M101" required /> 
+                    <DropDownInput id="branch" title="Floor No" inputRef={floorNoRef} options={['1', '2']} required />
+                    <DropDownInput id="slot" title="Block" inputRef={blockRef} options={['M-George', 'Ramanujan']} required />                        
                     <Input input_id="total-seats" title="Available Seats" inputRef={capacityRef} type="text" placeholder="30" required />
-                    <button className="bg-blue-500 hover:bg-blue-400 text-white font-Outfit-Bold py-1 px-2 my-7 mx-2 h-10 w-[5rem] rounded-[20px]" type="submit">ADD</button>
+                    <button className="bg-blue-800 hover:bg-blue-600 text-white font-Outfit-Bold py-1 px-2 my-7 mx-2 h-10 w-[5rem] rounded-[20px]" type="submit">ADD</button>
                 </form>
             </div>
 
             <div className="px-8 py-4">
                 <h2 className="text-xl font-Outfit-Bold mb-3">AVAILABLE ROOMS</h2>
-                <div className={`flex flex-wrap items-center bg-gray-100 p-4 rounded-md font-Outfit-Regular`}>
+                <div className={`flex flex-wrap items-center bg-gray-400 p-4 rounded-md font-Outfit-Regular`}>
                     {/* Search Bar */}
                     <div className="flex-grow flex flex-row items-center">
-                        <span className="ml-2 text-gray-500 flex-none">
+                        <span className="ml-2 text-gray-1000 flex-none">
                             <svg viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
                                 <path
                                     fillRule="evenodd"
                                     d="M8.5 15a6.5 6.5 0 100-13 6.5 6.5 0 000 13zm5.057-1.54l4.442 4.442a1 1 0 11-1.414 1.414l-4.442-4.442a7 7 0 111.414-1.414z"
                                     clipRule="evenodd"
-                                />
+                                /><option value="">Enteries</option>
+                                <option value="asc">Floor(0 - 5)</option>
+                                <option value="desc">Floor(5 - 0)</option>
                             </svg>
                         </span>
                         <input
@@ -201,7 +203,7 @@ export default function ManageRoom() {
                             <select className="w-full p-[10.4px] m-1 mr-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-login text-gray-600"
                                 defaultValue="nil" onChange={(e) => setFilterTerm(e.target.value)}>
                                 <option value="nil" >-</option>
-                                <option value="Ramanujan">Ramanujan Block</option>
+                                <option value="Ramanujan"></option>
                                 <option value="M-George">M-George Block</option>
                                 <option value="0">Ground Floor</option>
                                 <option value="1">First Floor</option>
@@ -250,7 +252,7 @@ export default function ManageRoom() {
                     </div>
                     <div className="flex flex-row gap-10">
                         <button className="bg-gray-500 hover:bg-gray-400 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleClearall}>CLEAR ALL</button>
-                        <button className="bg-green-500 hover:bg-green-400 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleNext}>NEXT</button>
+                        <button className="bg-blue-800 hover:bg-blue-600 text-white font-Outfit-Bold h-10 w-[10rem] rounded-[20px]" onClick={handleNext}>NEXT</button>
                     </div>
                 </div>
             </div>

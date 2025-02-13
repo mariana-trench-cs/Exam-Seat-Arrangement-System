@@ -12,13 +12,13 @@ module.exports = {
       },
       colors: {
         'green-login': '#92DBB6',
-        'green-medium': '#003944',
+        'green-medium': '#008',
         'green-light': '#295D68',
-        'green-dark': '#111F35',
-        'green-save': '#23CA85',
-        'grey-all': '#BECCCF',
+        'green-dark': '#111af6',
+        'green-save': '#008',
+        'grey-all': '#BECC',
         'red-download': '#DD7A96',
-        'background': '#F2F4E7',
+        'background': '#efefef',
       },
       letterSpacing: {
         needed: '.09em',

@@ -54,26 +54,26 @@ export default function NavBar() {
                     <img src={profile} alt="giga-chad" className={`${expand ? "rounded-full w-8 h-8 m-4 self-center" : "rounded-full w-8 h-8 ml-1 mr-4 my-1 self-center"}`} />
                     <p className={`${expand ? "mr-7 text-white font-Outfit-Medium tracking-needed self-center uppercase truncate ... " : " absolute left-[-999px]"}`}>{auth.user}</p>
                 </div>
-                <hr className="border-t border-green-light ml-5 mr-7"></hr>
+                <hr className="border-t border-white-dark ml-5 mr-7"></hr>
             </div>
 
             <div className="flex flex-col h-full py-5">
-                <NavLink to="home" className={({ isActive }) => isActive ? "bg-green-dark py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
+                <NavLink to="home" className={({ isActive }) => isActive ? "bg-green-light py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
                     <p className={`font-Outfit-Medium tracking-needed text-white ${expand ? "mx-6" : "absolute left-[-999px]"}`}>Home</p>
                     <img src={home} alt="H" className={`${expand ? "absolute left-[-999px]" : "h-7 w-7 ml-3 mr-4 my-1"}`} title="home" />
                 </NavLink>
 
-                <NavLink to="manage-room" className={({ isActive }) => isActive ? " bg-green-dark py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
+                <NavLink to="manage-room" className={({ isActive }) => isActive ? " bg-green-light py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
                     <p className={`font-Outfit-Medium tracking-needed text-white ${expand ? "mx-6" : "absolute left-[-999px]"}`}>Manage Rooms</p>
                     <img src={room} alt="MR" className={`${expand ? "absolute left-[-999px]" : "h-7 w-7 ml-[14px] mr-4 my-1"}`} title="Manage Rooms" />
                 </NavLink>
 
-                <NavLink to="university-exam" className={({ isActive }) => isActive ? " bg-green-dark py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
+                <NavLink to="university-exam" className={({ isActive }) => isActive ? " bg-green-light py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
                     <p className={`font-Outfit-Medium tracking-needed text-white ${expand ? "mx-6" : "absolute left-[-999px]"}`}>University Exams</p>
                     <img src={exam} alt="UE" className={`${expand ? "absolute left-[-999px]" : "h-7 w-7 ml-[14px] mr-4 my-1"}`} title="University Exams" />
                 </NavLink>
 
-                <NavLink to="seat-allocation" className={({ isActive }) => isActive ? " bg-green-dark py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
+                <NavLink to="seat-allocation" className={({ isActive }) => isActive ? " bg-green-light py-2 w-full flex flex-row" : "hover:bg-green-light py-2 w-full flex flex-row"}>
                     <p className={`font-Outfit-Medium tracking-needed text-white ${expand ? "mx-6" : "absolute left-[-999px]"}`}>Seat Allocation</p>
                     <img src={seat} alt="SA" className={`${expand ? "absolute left-[-999px]" : "h-7 w-7 ml-3 mr-4 my-1"}`} title="Seat Allocation" />
                 </NavLink>

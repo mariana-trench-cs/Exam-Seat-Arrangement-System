@@ -54,8 +54,8 @@ function Home() {
             </div>
 
             <div className="p-3 flex flex-row justify-between items-center">
-                <img src={muthoot} className="h-5 opacity-50" alt="muthoot logo" />
-                <div className="flex flex-row gap-5 pr-2 font-Outfit-Light text-green-dark">
+                
+                <div className="flex flex-row gap-5 pr-2 font-Outfit-Light text-block-dark">
                     <p className="hover:underline cursor-pointer">About</p>
                     <p className="hover:underline cursor-pointer ">Contact</p>
                 </div>
